@@ -10,64 +10,110 @@ body {
     height: 5%;
     min-height: 50px;
     min-width: 640px;
-    background-color: cyan;
+    background-color: #262626;
     display: block;
     top: 0px;
     left: 0px;
     float: left;
 }
 
-#home {
+#home{
     position: relative;
     border: 0px solid black;
-    height: 50px;
-    width: 50px;
-    left: 5%; 
-    display: inline-block;
-}
-
-#home:hover {
-    background-color: lightcyan;
-    border-bottom: 3px solid greenyellow; 
-}
-
-.navitem {
-    margin-left: -4px;
-    padding: 0px;
-    border: 0px solid black;
-    position: relative;
-    height: 50px;
+    height: 48px;
     width: 100px;
+    left: 5%;
+    top: 15px;
     display: inline-block;
     text-align: center;
 }
 
-.navitem:hover {
-    background-color: lightcyan;
-    border-bottom: 3px solid greenyellow; 
+#home a{
+    color: white;
+    text-decoration: none;
+}
+
+#home a:hover {
+    color: #a6a6a6;
+}
+
+.navitem {
+    color: white;
+    margin-left: -4px;
+    padding: 0px;
+    border: 0px solid black;
+    position: relative;
+    height: 48px;
+    width: 100px;
+    top: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.navitem a:hover {
+    color: #a6a6a6;
+}
+
+.navitem a{
+    color: white;
+    text-decoration: none;
 }
 
 #navlink1 {
-    left: 7%;
+    left: 10%;
 }
 
 #navlink2 {
-    left: 7%;
+    left: 10%;
 }
 
 #navlink3 {
-    left: 7%;
+    left: 10%;
 }
 
 #navlink4 {
-    left: 7%;
+    left: 31%;
+}
+
+#navlink5 {
+    left: 35%;
+}
+
+#navlink6 {
+    left: 38%;
 }
 
 #main {
-    width: 1300px;
+    width: 75%;
     background-color: white;
     height: 1000px;
     position: absolute;
-    top: 60px;
-    left: 25px;
+    top: 50px;
+    left: 25%;
+}
+
+#panel {
+    width: 25%;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 50px;
+    height: 1000px;
+}
+
+#search {
+    background-color: dimgray;
+}
+
+#search input {
+    margin: 10px;
+}
+
+#scroll {
+    height: 953px;
+    overflow-y: scroll;
+}
+
+footer p{
+    color: white;
+    background-color: black;
 }
