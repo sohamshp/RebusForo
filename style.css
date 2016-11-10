@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: cadetblue;
+    overflow: hidden;
 }
 
 #navbar {
@@ -15,6 +16,7 @@ body {
     top: 0px;
     left: 0px;
     float: left;
+    z-index: 10;
 }
 
 #home{
@@ -86,10 +88,14 @@ body {
 #main {
     width: 75%;
     background-color: white;
-    height: 1000px;
+    height: 95%;
     position: absolute;
     top: 50px;
     left: 25%;
+<<<<<<< HEAD
+=======
+    overflow: auto;
+>>>>>>> refs/remotes/origin/soham
 }
 
 #panel {
@@ -97,7 +103,11 @@ body {
     background-color: #d9d9d9;
     position: absolute;
     top: 50px;
+<<<<<<< HEAD
     height: 1000px;
+=======
+    height: 93%;
+>>>>>>> refs/remotes/origin/soham
 }
 
 #search {
@@ -109,11 +119,23 @@ body {
 }
 
 #scroll {
+<<<<<<< HEAD
     height: 953px;
     overflow-y: scroll;
+=======
+    height: 93%;
+    overflow-y: auto;
+>>>>>>> refs/remotes/origin/soham
 }
 
 footer p{
     color: white;
     background-color: black;
+<<<<<<< HEAD
+=======
+}
+
+p {
+    padding: 10px;
+>>>>>>> refs/remotes/origin/soham
 }
