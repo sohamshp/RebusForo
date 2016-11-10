@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var titles  = [
+                {
+                    'title': 'Favourite Phone?',
+                    'message': 'Mine is android. What about you?',
+                    'user': 'soham',
+                    'category': 'tech'
+                },
+                {
+                    'title': 'Y U NO LIKE WINDOWS?',
+                    'message': 'plz dont hate, i like it.',
+                    'user': 'yashesh',
+                    'category': 'tech'
+                }
+            ];
+
+            var title_str = JSON.stringify(titles);
+            alert(title_str);
+            localStorage.setItem('titles2', title_str);
+        </script>
+    </body>
+</html>

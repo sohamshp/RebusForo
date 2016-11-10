@@ -235,12 +235,14 @@ h4, h5 {
                     <div class="half left cf">
                         <input type="text" id="input-name" placeholder="Name">
                         <input type="text" id="input-subject" placeholder="Subject">
+                        <!--
                         <select id='input-select'>
                             <option value='null'>Select one</option>
                             <option value='general'>General</option>
                             <option value='tech'>Tech</option>
                             <option value='sports'>Sports</option>
                         </select>
+                        -->
                     </div>
                     <div class="half right cf">
                         <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
@@ -259,11 +261,13 @@ h4, h5 {
             var titles_str = window.localStorage.getItem('titles2');
             var titles = JSON.parse(titles_str);
             var len = titles.length;
-            for (var i=len-1; i>len-1-10; i--){
-                var stri = '<hr><h4>'+titles[i].title+'</h4><h6>'+titles[i].message.slice(0,25)+'</h6>'+titles[i].category;
-                var d = document.createElement('div');
-                d.innerHTML = stri;
-                document.getElementById('scroll').appendChild(d);
+            for (var i=len-1; i>=0; i--){
+                if (titles[i].category=='sports'){
+                    var stri = '<hr><h4>'+titles[i].title+'</h4><h6>'+titles[i].message.slice(0,25)+'</h6>';
+                    var d = document.createElement('div');
+                    d.innerHTML = stri;
+                    document.getElementById('scroll').appendChild(d);
+                }
             }
 
             
@@ -271,7 +275,7 @@ h4, h5 {
                 var title = document.getElementById('input-subject').value;
                 var name  = document.getElementById('input-name').value;
                 var msg   = document.getElementById('input-message').value;
-                var cat   = document.getElementById('input-select').value;
+                var cat   = 'sports';
                 //alert(title+name+msg);
                 var jsaun = {
                     'title': title,
